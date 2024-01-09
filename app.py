@@ -33,7 +33,7 @@ def display_color_grid(hex_colors, counts):
     for i, (color, count) in enumerate(zip(hex_colors, counts)):
         ax.add_patch(plt.Rectangle((i % 5, i // 5), 1, 1, fill=True, color=color, edgecolor='black'))
         plt.text(i % 5 + 0.5, i // 5 + 0.5, f"{count}\n{color}", color='black',
-                 ha='center', va='center', fontsize=2)
+                 ha='center', va='center', fontsize=4)
 
     plt.xlim((0, 5))
     plt.ylim((0, 5))
